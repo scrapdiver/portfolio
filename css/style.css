@@ -1,0 +1,19 @@
+* {
+    /* font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.nav-container {
+    align-self: flex-end;
+    flex-direction: row;
+    
+    
+}
+
+.intro{
+    font: 1em sans-serif;
+}
