@@ -1,19 +1,375 @@
 * {
-    /* font-family: 'Alegreya Sans', sans-serif;
-font-family: 'Open Sans', sans-serif; */
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+} 
+
+html{
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+}
+
+body{
+margin: 0;
+}
+
+
+.nav-container, .circles__container, .rule__container , .my-skills__container, .my-portfolio__container, .about-me__container, .find-me-here__container, .contact-me__container, .nice-to-meet-you__container{
+width: 100vw;
+height: 100vw;
+margin: 0 auto;
+}
+
+.nav__svg {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.nav__link {
+background-color: #232323;
+/* padding-left: 38%; */
+line-height: 3rem;
+width: 88%;
 display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+justify-content: space-around;
+margin-left: 220px;
+margin-top: -60px;
+margin-bottom: 60px;
+position: sticky;
+top: 0;
+
 }
 
-.nav-container {
-    align-self: flex-end;
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav__link a {
+    text-decoration: none; 
+    padding: 10px 50px;
+    color: white;
+    font-size: bold;
+}
+
+.nav__link a:hover{
+    color: #54be90;
+    transition: .3s;
+}
+
+
+.intro__heading {
+    width: 100%;
+    height: 30rem;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    color: #ffffff;
+    padding: 1%;
+    text-align: center;
+    display: flex;
     flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.intro__span{
+color: #54be90;
+text-decoration:underline; 
+text-decoration-color: #ffffff;
+padding-left: 10px;
+
+}
+
+
+.intro__p {
+    width: 100%;
+    height: 300px;
+    padding: 7%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.circles__container {
+   height: 250px;  
+   width: 100%;
+   margin: -100px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    color: #eb0f0f;
+    z-index: 1;
+    }
+
+
+
+
+
+.dicover__container {
+    border: 5px solid rgb(206, 228, 10);
+    background-color: #232323;
+    height: 400px;
+    color: #ffffff;
     
 }
 
-.intro{
-    font: 1em sans-serif;
+.dicover__container h3{
+color: #54be90;
+font-weight: 800;rgb(214, 14, 47);
+font-size: 1.5em;
+width: 80%;
+
+}
+
+.toobig{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.toop{
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 80px;
+    column-gap: 80px;
+}
+
+
+
+.my-skills__container {
+    height: 700px;
+    width: 100%; 
+    display: flex;
+    flex-direction:column;
+    justify-content: top;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.my-skills__h2{
+    color: #54be90;
+    font-weight: 800;
+    font-size: 2.3em;
+    flex-wrap: wrap;
+    
+}
+
+.my-skills__table {
+    
+    width: 70%;
+    text-align: center;
+    
+  }
+
+  .my-skills__table th{
+    text-align: left;
+  }
+
+
+
+.my-portfolio__container {
+    background-color: #54be90;
+    width: 100%;
+    height: 800px;
+    padding: 1%;
+    display: flex;
+    flex-direction:column;
+    justify-content: top;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.my-portfolio__container h2{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.3em;
+    padding-bottom: 40px;  
+}
+
+.boxes{
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    row-gap: 10px;
+    
+}
+
+.box{
+    height: 200px;
+    width: 300px;
+    display: flex;
+} 
+
+.box1, .box2, .box3, .box4, .box5{
+    background-color: azure;
+}
+
+.box6{
+    background-color: black;
+}
+.box__svg{
+    height: 95px;
+    width: 290px;
+    background-color: lightgrey;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box__p{
+    background-color: lightgrey; 
+    height: 90px;
+    width: 290px;
+    font-size: .8em;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 7px;
+}
+
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 5%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  
+}
+
+.about-me__container {
+    width: 100%;
+    height:  700px;
+    background-color: #ebebeb;
+}
+
+.cont{
+    height: 900px;
+    width: 100%;
+  display: flex;  
+  justify-content: center;
+  align-content: center;
+}
+
+.cont button{
+    width: 35%;
+    margin-left: 0;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1px 50px;
+    border-radius: 5%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.about-me__img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.about-me__container p {
+    height: 350px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-bottom: 30%;
+}
+
+.about-me__heading{
+    color: #000000;
+    font-weight: 800;
+    font-size: 2.3em;
+    padding-bottom: 40px;
+    text-align: center; 
+    padding-top: 80px;
+}
+
+.find-me-here__container {
+    border: 3px solid pink;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
+
+.find-me-here__container h3{
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+    }
+
+.svgs{
+    height: 70px;
+    width: 70px;
+}
+
+.svg-cont{
+    border: #eb0f0f solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-me__container {
+
+    background-color: #54be90;
+    height: 700px;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nice-to-meet-you__container {
+    height: 400px;
+    width: 100%;
+    padding: 1%;
+     background-color: #ebebeb;
+}
+
+.h2h2{
+    color: white;
 }
